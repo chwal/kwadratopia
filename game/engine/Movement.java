@@ -58,6 +58,7 @@ public class Movement implements EventHandler {
     }
 
 
+    // TODO: Use this method somehow in code above
     public static boolean allInstanceOf(Class<?> cls, Object... objs) {
         //Utility function that uses the reflection counterpart of instanceof, Class.isInstance():
         //Usage:  allInstanceOf(String.class, "aaa", "bbb"); // => true

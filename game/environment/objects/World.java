@@ -67,8 +67,8 @@ public class World {
 
     public void paintMapOnGroup(Group group){
         Random random = new Random();
-        for (int x = 0; x <= this.map_level_1.length-1; x++){
-            for(int y = 0; y <= this.map_level_1[0].length-1; y++){
+        for (int x = 0; x <= map_level_1.length-1; x++){
+            for(int y = 0; y <= map_level_1[0].length-1; y++){
                 if(this.map_level_1[x][y] instanceof Grass) {
                     Rectangle floor = new Rectangle(40, 40);
                     floor.setLayoutX(x * 40);
@@ -87,8 +87,8 @@ public class World {
 
     public void loadWorldObjectsOnGroup(Group group){
         Random random = new Random();
-        for (int x = 0; x <= this.map_level_1.length-1; x++){
-            for(int y = 0; y <= this.map_level_1[0].length-1; y++){
+        for (int x = 0; x <= map_level_1.length-1; x++){
+            for(int y = 0; y <= map_level_1[0].length-1; y++){
                 if(this.map_level_1[x][y] instanceof Wall) {
                     Rectangle wall = new Rectangle(40, 40);
                     wall.setLayoutX(x * 40);
@@ -98,7 +98,7 @@ public class World {
                     } else{
                         createRectangeOn(group, wall, Color.web("0x5B5D53", 1.0));
                     }
-                }else if(this.map_level_1[x][y] instanceof Water){
+                }else if(map_level_1[x][y] instanceof Water){
                     Rectangle water = new Rectangle(40, 40);
                     water.setLayoutX(x * 40);
                     water.setLayoutY(y * 40);
@@ -107,7 +107,7 @@ public class World {
                     } else{
                         createRectangeOn(group, water, Color.web("0x5D7DAB", 1.0));
                     }
-                }else if(this.map_level_1[x][y] instanceof Way){
+                }else if(map_level_1[x][y] instanceof Way){
                     Rectangle water = new Rectangle(40, 40);
                     water.setLayoutX(x * 40);
                     water.setLayoutY(y * 40);

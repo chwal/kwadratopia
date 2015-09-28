@@ -4,11 +4,14 @@ import game.engine.Movement;
 import game.engine.GameLoop;
 import game.environment.objects.World;
 import javafx.application.Application;
+import javafx.application.Platform;
+import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import game.player.Player;
+import javafx.stage.WindowEvent;
 
 import static game.engine.Library.*;
 
@@ -20,6 +23,7 @@ public class Main extends Application {
     private Scene scene;
     private World world;
     private Rectangle rectangle;
+    private Movement movement;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -28,7 +32,7 @@ public class Main extends Application {
         primaryStage.setResizable(false);
         group = new Group();
         scene = new Scene(group, 1280, 720);
-        Movement movement = new Movement(this);
+        movement = new Movement(this);
         scene.setOnKeyPressed(movement);
         
         world = new World();
@@ -45,9 +49,17 @@ public class Main extends Application {
 
         //drawGridOnGroup(group);
 
-
         primaryStage.setScene(scene);
         primaryStage.show();
+
+        //Close current application with Window [x]
+        primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+            @Override
+            public void handle(WindowEvent t) {
+                Platform.exit();
+                System.exit(0);
+            }
+        });
     }
 
     public Player getPlayer()

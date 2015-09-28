@@ -26,26 +26,9 @@ public class GameLoop extends Thread {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-            Move();
+            // TODO: Implement movement into own thread
+            // TODO: Implement some clock method for later purposes
 
         }
     }
-
-    private void Move(){
-        int x = (int) mainApplication.getPlayer().getLayoutX() / 40;
-        int y = (int) mainApplication.getPlayer().getLayoutY() / 40;
-
-
-        //check if one can't go anymore
-        if (((mainApplication.getWorld().getMap_level_1()[x][y-1] instanceof Wall)) &&
-            ((mainApplication.getWorld().getMap_level_1()[x-1][y] instanceof Wall)) &&
-            ((mainApplication.getWorld().getMap_level_1()[x][y+1] instanceof Wall)) &&
-            ((mainApplication.getWorld().getMap_level_1()[x+1][y] instanceof Wall)))
-        {
-
-        }
-
-
-    }
-
 }
