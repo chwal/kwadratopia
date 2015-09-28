@@ -16,7 +16,7 @@ public class Player extends Rectangle implements WorldObject {
         setLayoutY(y * 40);
 
         //texture
-        Image img = new Image("img/hero.png");
+        Image img = new Image("img/hero_r_attack.png");
         this.setFill(new ImagePattern(img));
     }
 }
