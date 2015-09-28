@@ -1,6 +1,6 @@
 package game;
 
-import game.engine.Movement;
+import game.engine.UserInteraction;
 import game.engine.GameLoop;
 import game.environment.objects.World;
 import javafx.application.Application;
@@ -20,20 +20,26 @@ public class Main extends Application {
     private Player player;
     private GameLoop gameLoop;
     private Group group;
-    private Scene scene;
+    private Scene gameScene;
+    private Scene menuScene;
     private World world;
     private Rectangle rectangle;
-    private Movement movement;
+    private UserInteraction userInteraction;
+    private Group group2 = new Group();
+    private Stage primaryStage;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
 
+        this.primaryStage = primaryStage;
+
         primaryStage.setTitle("Kwadratopia 0.01");
         primaryStage.setResizable(false);
         group = new Group();
-        scene = new Scene(group, 1280, 720);
-        movement = new Movement(this);
-        scene.setOnKeyPressed(movement);
+        gameScene = new Scene(group, 1280, 720);
+        menuScene = new Scene(group2, 1280, 720);
+        userInteraction = new UserInteraction(this);
+        gameScene.setOnKeyPressed(userInteraction);
         
         world = new World();
         world.loadWorldObjectsOnGroup(group);
@@ -49,7 +55,7 @@ public class Main extends Application {
 
         //drawGridOnGroup(group);
 
-        primaryStage.setScene(scene);
+        primaryStage.setScene(gameScene);
         primaryStage.show();
 
         //Close current application with Window [x]
@@ -67,10 +73,16 @@ public class Main extends Application {
         return player;
     }
 
-    public World getWorld(){ return world; }
+    public World getWorld(){
+        return world;
+    }
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    public void showMenuScene(){
+        this.primaryStage.setScene(menuScene);
     }
 
 }

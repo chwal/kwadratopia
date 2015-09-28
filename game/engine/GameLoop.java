@@ -26,9 +26,9 @@ public class GameLoop extends Thread {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+
             // TODO: Implement movement into own thread
             // TODO: Implement some clock method for later purposes
-
         }
     }
 }
