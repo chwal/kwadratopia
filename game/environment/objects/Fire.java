@@ -1,22 +1,25 @@
-package game.player;
+package game.environment.objects;
 
 import game.environment.WorldObject;
 import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Rectangle;
 
+import java.util.Random;
+
 /**
  * Created by chwal on 15/09/15.
  */
-public class Player extends WorldObject {
+public class Fire extends WorldObject {
 
-    public Player(int x, int y){
+    public Fire(int x, int y){
         super(40, 40, true);
         setLayoutX(x * 40);
         setLayoutY(y * 40);
 
         //texture
-        Image img = new Image("img/hero_r.png");
-        this.setFill(new ImagePattern(img));
+        Image img0 = new Image("img/fireplace_1.png");
+        this.setFill(new ImagePattern(img0));
     }
+
 }

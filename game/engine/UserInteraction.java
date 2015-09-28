@@ -2,11 +2,13 @@ package game.engine;
 
 import javafx.event.Event;
 import javafx.event.EventHandler;
+import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import game.Main;
 import game.environment.objects.Tree;
 import game.environment.objects.Wall;
+import javafx.scene.paint.ImagePattern;
 
 /**
  * Created by chwal on 25/09/15.
@@ -14,6 +16,14 @@ import game.environment.objects.Wall;
 public class UserInteraction implements EventHandler {
 
     Main mainApplication = new Main();
+
+    int menuClickCounter;
+    int playerAttackCounter;
+
+    //textures
+    Image hero_r = new Image("img/hero_r.png");
+    Image hero_l = new Image("img/hero_l.png");
+    Image hero_r_attack = new Image("img/hero_r_attack.png");
 
     public UserInteraction(Main mainApplication) {
         this.mainApplication = mainApplication;
@@ -28,36 +38,46 @@ public class UserInteraction implements EventHandler {
         int currentPlayerPositionY = (int) mainApplication.getPlayer().getLayoutY();
 
         if (keyEvent.getCode().equals(KeyCode.W) || keyEvent.getCode().equals(KeyCode.UP)) {
-            if (!(mainApplication.getWorld().getMap_level_1()[currentPlayerPositionX / 40][currentPlayerPositionY / 40 - 1] instanceof Wall)) {
-                if (!(mainApplication.getWorld().getMap_level_1()[currentPlayerPositionX / 40][currentPlayerPositionY / 40 - 1] instanceof Tree)) {
-                    mainApplication.getPlayer().setLayoutY(mainApplication.getPlayer().getLayoutY() - 40);
-                }
+            if (!(mainApplication.getWorld().getMap_level_1()[currentPlayerPositionX / 40][currentPlayerPositionY / 40 - 1].getColision())) {
+                mainApplication.getPlayer().setLayoutY(mainApplication.getPlayer().getLayoutY() - 40);
             }
         }
         if (keyEvent.getCode().equals(KeyCode.S) || keyEvent.getCode().equals(KeyCode.DOWN)) {
-            if (!(mainApplication.getWorld().getMap_level_1()[currentPlayerPositionX / 40][currentPlayerPositionY / 40 + 1] instanceof Wall)) {
-                if (!(mainApplication.getWorld().getMap_level_1()[currentPlayerPositionX / 40][currentPlayerPositionY / 40 + 1] instanceof Tree)) {
-                    mainApplication.getPlayer().setLayoutY(mainApplication.getPlayer().getLayoutY() + 40);
-                }
+            if (!(mainApplication.getWorld().getMap_level_1()[currentPlayerPositionX / 40][currentPlayerPositionY / 40 + 1].getColision())) {
+                mainApplication.getPlayer().setLayoutY(mainApplication.getPlayer().getLayoutY() + 40);
             }
         }
         if (keyEvent.getCode().equals(KeyCode.A) || keyEvent.getCode().equals(KeyCode.LEFT)) {
-            if (!(mainApplication.getWorld().getMap_level_1()[currentPlayerPositionX / 40 - 1][currentPlayerPositionY / 40] instanceof Wall)) {
-                if (!(mainApplication.getWorld().getMap_level_1()[currentPlayerPositionX / 40 - 1][currentPlayerPositionY / 40] instanceof Tree)) {
-                    mainApplication.getPlayer().setLayoutX(mainApplication.getPlayer().getLayoutX() - 40);
-                }
+            if (!(mainApplication.getWorld().getMap_level_1()[currentPlayerPositionX / 40 - 1][currentPlayerPositionY / 40].getColision())) {
+                mainApplication.getPlayer().setFill(new ImagePattern(hero_l));
+                mainApplication.getPlayer().setLayoutX(mainApplication.getPlayer().getLayoutX() - 40);
             }
         }
         if (keyEvent.getCode().equals(KeyCode.D) || keyEvent.getCode().equals(KeyCode.RIGHT)) {
-            if (!(mainApplication.getWorld().getMap_level_1()[currentPlayerPositionX / 40 + 1][currentPlayerPositionY / 40] instanceof Wall)) {
-                if (!(mainApplication.getWorld().getMap_level_1()[currentPlayerPositionX / 40 + 1][currentPlayerPositionY / 40] instanceof Tree)) {
-                    mainApplication.getPlayer().setLayoutX(mainApplication.getPlayer().getLayoutX() + 40);
-                }
+            if (!(mainApplication.getWorld().getMap_level_1()[currentPlayerPositionX / 40 + 1][currentPlayerPositionY / 40].getColision())) {
+                mainApplication.getPlayer().setFill(new ImagePattern(hero_r));
+                mainApplication.getPlayer().setLayoutX(mainApplication.getPlayer().getLayoutX() + 40);
             }
         }
 
         if (keyEvent.getCode().equals(KeyCode.ESCAPE)) {
-            mainApplication.showMenuScene();
+            if (menuClickCounter % 2 != 0) {
+                mainApplication.showGameScene();
+                menuClickCounter++;
+            } else {
+                mainApplication.showMenuScene();
+                menuClickCounter++;
+            }
+        }
+
+        if (keyEvent.getCode().equals(KeyCode.F)) {
+            if (playerAttackCounter % 2 != 0) {
+                mainApplication.getPlayer().setFill(new ImagePattern(hero_r));
+                playerAttackCounter++;
+            } else {
+                mainApplication.getPlayer().setFill(new ImagePattern(hero_r_attack));
+                playerAttackCounter++;
+            }
         }
     }
 

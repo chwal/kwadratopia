@@ -1,8 +1,21 @@
 package game.environment;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
+import javafx.scene.shape.Rectangle;
+
 /**
  * Created by chwal on 16/09/15.
  */
-public interface WorldObject {
-    //Needs some work
+public class WorldObject extends Rectangle{
+
+    protected Boolean collision = false;
+
+    public WorldObject(int x, int y, Boolean collision){
+        super(x,y);
+        this.collision = collision;
+    }
+
+    public Boolean getColision() {
+        return collision;
+    }
 }

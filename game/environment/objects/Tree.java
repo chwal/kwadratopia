@@ -10,10 +10,10 @@ import java.util.Random;
 /**
  * Created by chwal on 15/09/15.
  */
-public class Tree extends Rectangle implements WorldObject {
+public class Tree extends WorldObject {
 
     public Tree(int x, int y){
-        super(40, 40);
+        super(40, 40, true);
         setLayoutX(x * 40);
         setLayoutY(y * 40);
 
