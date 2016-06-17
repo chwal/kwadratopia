@@ -67,7 +67,7 @@ public class Main extends Application {
 
         //drawGridOnGroup(group);
 
-        primaryStage.setScene(gameScene);
+        primaryStage.setScene(menuScene);
         //Library.drawGridOnGroup(group);
         primaryStage.show();
 

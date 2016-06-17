@@ -16,7 +16,7 @@ public class Fire extends WorldObject {
         setLayoutY(y * 40);
 
         //texture
-        Image img0 = new Image("img/fireplace_1.png");
+        Image img0 = new Image("sprites/fireplace_1.png");
         this.setFill(new ImagePattern(img0));
     }
 

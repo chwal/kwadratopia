@@ -14,15 +14,15 @@ import javafx.scene.paint.ImagePattern;
  */
 public class UserInteraction implements EventHandler {
 
-    Main mainApplication = new Main();
+    private static Main mainApplication = new Main();
 
     int menuClickCounter;
     int playerAttackCounter;
 
     //textures
-    Image hero_r = new Image("img/hero_r.png");
-    Image hero_l = new Image("img/hero_l.png");
-    Image hero_r_attack = new Image("img/hero_r_attack.png");
+    Image hero_r = new Image("sprites/hero_r.png");
+    Image hero_l = new Image("sprites/hero_l.png");
+    Image hero_r_attack = new Image("sprites/hero_r_attack.png");
 
     public UserInteraction(Main mainApplication) {
         this.mainApplication = mainApplication;
@@ -93,5 +93,9 @@ public class UserInteraction implements EventHandler {
             }
         }
         return true;
+    }
+
+    public static Main getMainApplication() {
+        return mainApplication;
     }
 }
