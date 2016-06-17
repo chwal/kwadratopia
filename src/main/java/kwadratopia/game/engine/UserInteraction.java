@@ -20,9 +20,9 @@ public class UserInteraction implements EventHandler {
     int playerAttackCounter;
 
     //textures
-    Image hero_r = new Image("sprites/hero_r.png");
-    Image hero_l = new Image("sprites/hero_l.png");
-    Image hero_r_attack = new Image("sprites/hero_r_attack.png");
+    Image hero_r = new Image("sprites/player/hero_r.png");
+    Image hero_l = new Image("sprites/player/hero_l.png");
+    Image hero_r_attack = new Image("sprites/player/hero_r_attack.png");
 
     public UserInteraction(Main mainApplication) {
         this.mainApplication = mainApplication;
@@ -41,23 +41,27 @@ public class UserInteraction implements EventHandler {
         if (keyEvent.getCode().equals(KeyCode.W) || keyEvent.getCode().equals(KeyCode.UP)) {
             if (!(mainApplication.getWorld().getMap_level_1()[currentPlayerPositionX / 40][currentPlayerPositionY / 40 - 1].getColision())) {
                 mainApplication.getPlayer().setLayoutY(mainApplication.getPlayer().getLayoutY() - 40);
+                printPlayerPosition(mainApplication);
             }
         }
         if (keyEvent.getCode().equals(KeyCode.S) || keyEvent.getCode().equals(KeyCode.DOWN)) {
             if (!(mainApplication.getWorld().getMap_level_1()[currentPlayerPositionX / 40][currentPlayerPositionY / 40 + 1].getColision())) {
                 mainApplication.getPlayer().setLayoutY(mainApplication.getPlayer().getLayoutY() + 40);
+                printPlayerPosition(mainApplication);
             }
         }
         if (keyEvent.getCode().equals(KeyCode.A) || keyEvent.getCode().equals(KeyCode.LEFT)) {
             if (!(mainApplication.getWorld().getMap_level_1()[currentPlayerPositionX / 40 - 1][currentPlayerPositionY / 40].getColision())) {
                 mainApplication.getPlayer().setFill(new ImagePattern(hero_l));
                 mainApplication.getPlayer().setLayoutX(mainApplication.getPlayer().getLayoutX() - 40);
+                printPlayerPosition(mainApplication);
             }
         }
         if (keyEvent.getCode().equals(KeyCode.D) || keyEvent.getCode().equals(KeyCode.RIGHT)) {
             if (!(mainApplication.getWorld().getMap_level_1()[currentPlayerPositionX / 40 + 1][currentPlayerPositionY / 40].getColision())) {
                 mainApplication.getPlayer().setFill(new ImagePattern(hero_r));
                 mainApplication.getPlayer().setLayoutX(mainApplication.getPlayer().getLayoutX() + 40);
+                printPlayerPosition(mainApplication);
             }
         }
 
@@ -95,7 +99,12 @@ public class UserInteraction implements EventHandler {
         return true;
     }
 
+    private void printPlayerPosition(Main mainApp){
+        System.out.println("X: " + mainApp.getPlayer().getPlayerPositionX() + ", " + "Y: " + mainApp.getPlayer().getPlayerPositionY());
+    }
+
     public static Main getMainApplication() {
         return mainApplication;
     }
+
 }

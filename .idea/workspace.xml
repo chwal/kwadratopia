@@ -2,62 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b42661a-73b7-4cb7-b934-a6a28026628f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/environment/objects/Fire.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/engine/GameLoop.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/environment/objects/Grass.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/engine/Library.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/Main$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/ui_controller/MenuController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/player/Player.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/environment/objects/Tree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/engine/UserInteraction.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/environment/objects/Wall.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/environment/objects/Water.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/environment/objects/Way.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/environment/objects/World.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/environment/WorldObject.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sprites/brick_0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sprites/brick_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sprites/fireplace_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sprites/fireplace_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sprites/hero_l.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sprites/hero_l_attack.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sprites/hero_r.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sprites/hero_r_attack.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/kwadratopia-0.0.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sprites/tree_0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sprites/tree_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sprites/tree_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/fxml/MenuUI.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\.idea\uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\src\game\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\src\game\engine\GameLoop.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\src\game\engine\Library.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\src\game\engine\UserInteraction.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\src\game\environment\WorldLevel.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\src\game\environment\WorldObject.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\src\game\environment\objects\Fire.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\src\game\environment\objects\Grass.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\src\game\environment\objects\Tree.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\src\game\environment\objects\Wall.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\src\game\environment\objects\Water.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\src\game\environment\objects\Way.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\src\game\environment\objects\World.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\src\game\player\Player.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\src\game\ui_controller\MenuController.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\target\classes\MenuUI.fxml" afterPath="" />
+      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\target\classes\sprites\brick_0.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\target\classes\sprites\brick_1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\target\classes\sprites\fireplace_1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\target\classes\sprites\fireplace_2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\target\classes\sprites\hero_l.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\target\classes\sprites\hero_l_attack.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\target\classes\sprites\hero_r.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\target\classes\sprites\hero_r_attack.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\target\classes\sprites\tree_0.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\target\classes\sprites\tree_1.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\target\classes\sprites\tree_2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\projekte\kwadratopia_0_0_1\target\kwadratopia-0.0.0.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/kwadratopia/game/environment/objects/Fire.class" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/environment/objects/Fire.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/kwadratopia/game/player/Player.class" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/player/Player.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/kwadratopia/game/environment/objects/Tree.class" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/environment/objects/Tree.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/kwadratopia/game/engine/UserInteraction.class" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/engine/UserInteraction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/kwadratopia/game/environment/objects/Wall.class" afterPath="$PROJECT_DIR$/target/classes/kwadratopia/game/environment/objects/Wall.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/kwadratopia/game/environment/objects/Fire.java" afterPath="$PROJECT_DIR$/src/main/java/kwadratopia/game/environment/objects/Fire.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/kwadratopia/game/Main.java" afterPath="$PROJECT_DIR$/src/main/java/kwadratopia/game/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/kwadratopia/game/ui_controller/MenuController.java" afterPath="$PROJECT_DIR$/src/main/java/kwadratopia/game/ui_controller/MenuController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/MenuUI.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/MenuUI.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/kwadratopia/game/player/Player.java" afterPath="$PROJECT_DIR$/src/main/java/kwadratopia/game/player/Player.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/kwadratopia/game/environment/objects/Tree.java" afterPath="$PROJECT_DIR$/src/main/java/kwadratopia/game/environment/objects/Tree.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/kwadratopia/game/engine/UserInteraction.java" afterPath="$PROJECT_DIR$/src/main/java/kwadratopia/game/engine/UserInteraction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/kwadratopia/game/environment/objects/Wall.java" afterPath="$PROJECT_DIR$/src/main/java/kwadratopia/game/environment/objects/Wall.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\projekte\kwadratopia_0_0_1\src\main\resources\sprites\brick_0.png" afterPath="$PROJECT_DIR$/src/main/resources/sprites/structures/brick_0.png" />
+      <change type="MOVED" beforePath="D:\projekte\kwadratopia_0_0_1\src\main\resources\sprites\brick_1.png" afterPath="$PROJECT_DIR$/src/main/resources/sprites/structures/brick_1.png" />
+      <change type="MOVED" beforePath="D:\projekte\kwadratopia_0_0_1\src\main\resources\sprites\fireplace_1.png" afterPath="$PROJECT_DIR$/src/main/resources/sprites/structures/fireplace_1.png" />
+      <change type="MOVED" beforePath="D:\projekte\kwadratopia_0_0_1\src\main\resources\sprites\fireplace_2.png" afterPath="$PROJECT_DIR$/src/main/resources/sprites/structures/fireplace_2.png" />
+      <change type="MOVED" beforePath="D:\projekte\kwadratopia_0_0_1\src\main\resources\sprites\hero_l.png" afterPath="$PROJECT_DIR$/src/main/resources/sprites/player/hero_l.png" />
+      <change type="MOVED" beforePath="D:\projekte\kwadratopia_0_0_1\src\main\resources\sprites\hero_l_attack.png" afterPath="$PROJECT_DIR$/src/main/resources/sprites/player/hero_l_attack.png" />
+      <change type="MOVED" beforePath="D:\projekte\kwadratopia_0_0_1\src\main\resources\sprites\hero_r.png" afterPath="$PROJECT_DIR$/src/main/resources/sprites/player/hero_r.png" />
+      <change type="MOVED" beforePath="D:\projekte\kwadratopia_0_0_1\src\main\resources\sprites\hero_r_attack.png" afterPath="$PROJECT_DIR$/src/main/resources/sprites/player/hero_r_attack.png" />
+      <change type="MOVED" beforePath="D:\projekte\kwadratopia_0_0_1\src\main\resources\sprites\tree_0.png" afterPath="$PROJECT_DIR$/src/main/resources/sprites/environment/tree_0.png" />
+      <change type="MOVED" beforePath="D:\projekte\kwadratopia_0_0_1\src\main\resources\sprites\tree_1.png" afterPath="$PROJECT_DIR$/src/main/resources/sprites/environment/tree_1.png" />
+      <change type="MOVED" beforePath="D:\projekte\kwadratopia_0_0_1\src\main\resources\sprites\tree_2.png" afterPath="$PROJECT_DIR$/src/main/resources/sprites/environment/tree_2.png" />
     </list>
     <ignored path="kwadratopia.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,16 +59,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserInteraction.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserInteraction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kwadratopia/game/engine/UserInteraction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5265487">
-              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding>
-                <element signature="e#714#715#0" expanded="true" />
-                <element signature="e#768#769#0" expanded="true" />
-                <element signature="e#3907#3908#0" expanded="true" />
-                <element signature="e#3945#3946#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#735#736#0" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
+                <element signature="e#4339#4340#0" expanded="true" />
+                <element signature="e#4377#4378#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kwadratopia/game/player/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.61946905">
+              <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+              <folding>
+                <element signature="e#528#529#0" expanded="true" />
+                <element signature="e#573#574#0" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+                <element signature="e#659#660#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kwadratopia/game/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="15" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kwadratopia/game/ui_controller/MenuController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,14 +128,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/fxml/MenuUI.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/kwadratopia/game/ui_controller/MenuController.java" />
         <option value="$PROJECT_DIR$/src/main/java/kwadratopia/game/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kwadratopia/game/engine/UserInteraction.java" />
         <option value="$PROJECT_DIR$/src/main/java/kwadratopia/game/environment/objects/Fire.java" />
         <option value="$PROJECT_DIR$/src/main/java/kwadratopia/game/environment/objects/Tree.java" />
         <option value="$PROJECT_DIR$/src/main/java/kwadratopia/game/environment/objects/Wall.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kwadratopia/game/player/Player.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/kwadratopia/game/ui_controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kwadratopia/game/engine/UserInteraction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kwadratopia/game/player/Player.java" />
       </list>
     </option>
   </component>
@@ -129,6 +148,11 @@
       <MavenGeneralSettings>
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -218,6 +242,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="kwadratopia_0_0_1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kwadratopia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kwadratopia_0_0_1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -507,10 +545,23 @@
     <property name="dynamic.classpath" value="false" />
     <property name="recentsLimit" value="5" />
   </component>
-  <component name="RunManager" selected="JAR Application.kwadratopia-0.0.0.jar">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projekte\kwadratopia_0_0_1\src\main\resources\sprites\environment" />
+      <recent name="D:\projekte\kwadratopia_0_0_1\src\main\resources\sprites\player" />
+      <recent name="D:\projekte\kwadratopia_0_0_1\src\main\resources\sprites\structures" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JAR Application.kwadratopia-0.0.1.jar">
     <configuration default="false" name="kwadratopia-0.0.0.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/kwadratopia-0.0.0.jar" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="kwadratopia-0.0.1.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/kwadratopia-0.0.1.jar" />
       <envs />
       <method />
     </configuration>
@@ -782,12 +833,14 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JAR Application.kwadratopia-0.0.0.jar" />
+      <item index="1" class="java.lang.String" itemvalue="JAR Application.kwadratopia-0.0.1.jar" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JAR Application.kwadratopia-0.0.0.jar" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JAR Application.kwadratopia-0.0.1.jar" />
+        <item index="1" class="java.lang.String" itemvalue="JAR Application.kwadratopia-0.0.0.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -802,12 +855,12 @@
       <option name="number" value="Default" />
       <updated>1466170444317</updated>
       <workItem from="1466170447297" duration="52000" />
-      <workItem from="1466170512293" duration="1163000" />
+      <workItem from="1466170512293" duration="3387000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1215000" />
+    <option name="totallyTimeSpent" value="3439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1936" height="1186" extended-state="6" />
@@ -818,7 +871,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13113007" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33017078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -859,26 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.074030556">
           <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kwadratopia/game/ui_controller/MenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kwadratopia/game/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.448276">
-          <caret line="46" column="42" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -939,14 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kwadratopia/game/player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kwadratopia/game/environment/objects/Grass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -985,15 +1010,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sprites/structures/fireplace_2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sprites/player/hero_l.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sprites/environment/tree_0.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk-8u74-windows-x64/javafx-src.zip!/javafx/application/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="144" column="22" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kwadratopia/game/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kwadratopia/game/ui_controller/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kwadratopia/game/engine/UserInteraction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5265487">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding>
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#3907#3908#0" expanded="true" />
-            <element signature="e#3945#3946#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+            <element signature="e#4339#4340#0" expanded="true" />
+            <element signature="e#4377#4378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kwadratopia/game/player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61946905">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+          <folding>
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
           </folding>
         </state>
       </provider>

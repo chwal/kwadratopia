@@ -15,7 +15,15 @@ public class Player extends WorldObject {
         setLayoutY(y * 40);
 
         //texture
-        Image img = new Image("sprites/hero_r.png");
+        Image img = new Image("sprites/player/hero_r.png");
         this.setFill(new ImagePattern(img));
+    }
+
+    public double getPlayerPositionX(){
+        return this.getLayoutX() / 40;
+    }
+
+    public double getPlayerPositionY(){
+        return this.getLayoutY() / 40;
     }
 }

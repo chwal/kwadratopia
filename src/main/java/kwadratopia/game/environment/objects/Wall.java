@@ -20,10 +20,10 @@ public class Wall extends WorldObject {
 
         //texture
         if(random.nextInt()%2 == 0){
-            Image img0 = new Image("sprites/brick_0.png");
+            Image img0 = new Image("sprites/structures/brick_0.png");
             this.setFill(new ImagePattern(img0));
         }else {
-            Image img1 = new Image("sprites/brick_1.png");
+            Image img1 = new Image("sprites/structures/brick_1.png");
             this.setFill(new ImagePattern(img1));
         }
     }

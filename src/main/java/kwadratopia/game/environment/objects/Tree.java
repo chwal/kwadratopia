@@ -20,13 +20,13 @@ public class Tree extends WorldObject {
 
         //texture
         if(random.nextInt(3)%2 == 0){
-            Image img0 = new Image("sprites/tree_0.png");
+            Image img0 = new Image("sprites/environment/tree_0.png");
             this.setFill(new ImagePattern(img0));
         }else if(random.nextInt(3)%3 == 0){
-            Image img1 = new Image("sprites/tree_1.png");
+            Image img1 = new Image("sprites/environment/tree_1.png");
             this.setFill(new ImagePattern(img1));
         }else{
-            Image img2 = new Image("sprites/tree_2.png");
+            Image img2 = new Image("sprites/environment/tree_2.png");
             this.setFill(new ImagePattern(img2));
         }
     }
