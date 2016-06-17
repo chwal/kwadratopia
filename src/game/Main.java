@@ -3,9 +3,6 @@ package game;
 import game.engine.UserInteraction;
 import game.engine.GameLoop;
 import game.environment.objects.World;
-import javafx.animation.Animation;
-import javafx.animation.KeyFrame;
-import javafx.animation.TimelineBuilder;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.EventHandler;
@@ -17,7 +14,6 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import game.player.Player;
 import javafx.stage.WindowEvent;
-import javafx.util.Duration;
 
 import static game.engine.Library.*;
 
@@ -44,7 +40,7 @@ public class Main extends Application {
         gameScene = new Scene(group, 1280, 720);
 
 
-        group2 = FXMLLoader.load(getClass().getResource("ui/MenuUI.fxml"));
+        group2 = FXMLLoader.load(getClass().getResource("game/ui/MenuUI.fxml"));
         menuScene = new Scene(group2, 1280, 720);
         userInteraction = new UserInteraction(this);
         gameScene.setOnKeyPressed(userInteraction);
